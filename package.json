@@ -1,18 +1,25 @@
 {
-  "name": "nodejs-heroku",
+  "name": "px-html",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "gulp server",
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "deploy-init": "gulp deploy-init",
+    "deploy": "gulp deploy"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "engines": {
-    "node": "10.x"
-  },
   "dependencies": {
-    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-file-include": "./src/dev/gulp-file-include",
+    "gulp-sass": "^5.1.0",
+    "gulp-shell": "^0.8.0",
+    "gulp-filter-each": "^1.0.1",
+    "http-server": "^0.12.3",
+    "sass": "^1.52.0"
   }
 }

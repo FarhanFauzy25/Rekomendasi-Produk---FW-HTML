@@ -1,0 +1,2 @@
+$ echo '<?php include_once("BetterVer_FW.html"); ?>' > index.php
+$ echo '{}' > composer.json
